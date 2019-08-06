@@ -1,0 +1,40 @@
+footer {
+  background-color: #0B162B;
+  padding: 13px 0 17px;
+
+  .row-1 {
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 36px;
+  }
+
+  .row-2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    li {
+      list-style-type: none;
+
+      &:not(:last-child) {
+        a {
+          border-right: 1px solid white;
+        }
+      }
+    }
+
+    a {
+      display: inline;
+      color: white;
+      font-size: 14px;
+      line-height: 36px;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+  }
+}

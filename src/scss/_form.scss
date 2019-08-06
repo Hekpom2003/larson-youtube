@@ -1,0 +1,60 @@
+.form {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 20px 13px;
+
+  h2 {
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 35px;
+  }
+
+  &__text-info {
+    color: #FA0000;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 7px;
+  }
+
+  .form-control {
+
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+
+    input {
+      border: none;
+      background: #F8F8F8;
+      border-radius: 4px;
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 14px;
+      line-height: 16px;
+      color: fade_out($black,0.5);
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__attantion {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    opacity: 0.7;
+  }
+
+  &__policy {
+    color: fade_out($black,0.5);
+    opacity: 0.5;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+}

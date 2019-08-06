@@ -1,0 +1,23 @@
+.title {
+  margin-bottom: 12px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    display: inline;
+  }
+
+  &__icon {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

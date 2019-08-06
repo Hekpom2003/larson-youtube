@@ -1,0 +1,58 @@
+@import './font';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+.container {
+
+  padding: 0 15px;
+  @media screen and(min-width: 1500px) {
+    width: 1410px;
+    margin: 0 auto;
+  }
+}
+
+.button {
+  background: #888;
+  border: 1px solid #888;
+  box-shadow: 0px 3px 0px #333;
+  border-radius: 4px;
+  padding: 12px 20px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+
+  &.button--block {
+    width: 100%;
+  }
+
+  &.button--orange {
+    border-color: $orange;
+    color: white;
+    background-color: $orange;
+    box-shadow: 0px 3px 0px #F0511B;
+  }
+
+  &.button--orange-inverted {
+    border-color: $orange;
+    color: $orange;
+    background-color: white;
+    box-shadow: 0px 3px 0px white;
+    font-weight: normal;
+  }
+}

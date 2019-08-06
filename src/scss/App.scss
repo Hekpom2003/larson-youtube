@@ -1,0 +1,33 @@
+/** Внешние библиотеки*/
+@import "~normalize.css/normalize.css";
+
+/** ebnvioment */
+@import "vars";
+@import "common";
+
+/** component styles */
+
+@import "topButton";
+@import "title";
+@import "mainImage";
+@import "preimushestva";
+@import "form";
+@import "popularQuestions";
+@import "footer";
+
+.text-1 {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.text-2 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: $orange;
+  margin-bottom: 20px;
+}
+aside {
+  margin-bottom: 30px;
+}

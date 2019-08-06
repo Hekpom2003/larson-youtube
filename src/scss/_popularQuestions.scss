@@ -1,0 +1,46 @@
+.popular-questions {
+  h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+
+  &__question {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+  }
+
+  &__answer {
+    grid-column: 1/3;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__more {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
