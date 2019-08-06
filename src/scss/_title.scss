@@ -6,6 +6,11 @@
     font-size: 22px;
     line-height: 26px;
     display: inline;
+
+    @media screen and (min-width: 1500px){
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 
   &__icon {
@@ -15,6 +20,13 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+
+    @media screen and (min-width: 1500px){
+      width: 64px;
+      height: 64px;
+      top: 10px;
+      left: 20px;
+    }
 
     img {
       max-width: 100%;

@@ -4,7 +4,7 @@ export function Form() {
     return (
         <section className='form'>
             <h2>Присоединяйтесь и зарабатывайте!</h2>
-            <div className="form__text-info">Канал закрытый, поэтому ссылка на него вам придет на почту и в<br/>
+            <div className="form__text-info">Канал закрытый, поэтому ссылка на него вам придет на почту и в
                 SMS-сообщении
             </div>
 

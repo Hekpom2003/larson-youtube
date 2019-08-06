@@ -4,12 +4,22 @@
   border-radius: 10px;
   padding: 20px 13px;
 
+  @media screen and (min-width: 1500px) {
+    padding: 37px 50px;
+  }
+
   h2 {
     font-size: 18px;
     line-height: 23px;
     text-transform: uppercase;
     text-align: center;
     padding: 0 35px;
+
+    @media screen and (min-width: 1500px) {
+      font-size: 32px;
+      line-height: 130%;
+      margin-bottom: 10px;
+    }
   }
 
   &__text-info {
@@ -18,12 +28,22 @@
     line-height: 15px;
     text-align: center;
     margin-bottom: 7px;
+
+    @media screen and (min-width: 1500px) {
+      font-size: 17px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
   }
 
   .form-control {
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 10px;
+
+      @media screen and (min-width: 1500px) {
+        margin-bottom: 20px;
+      }
     }
 
     input {
@@ -34,7 +54,13 @@
       padding: 12px 15px;
       font-size: 14px;
       line-height: 16px;
-      color: fade_out($black,0.5);
+      color: fade_out($black, 0.5);
+
+      @media screen and (min-width: 1500px) {
+        font-size: 17px;
+        line-height: 30px;
+        padding: 19px 30px 16px;
+      }
 
       &:disabled {
         opacity: 0.5;
@@ -50,7 +76,7 @@
   }
 
   &__policy {
-    color: fade_out($black,0.5);
+    color: fade_out($black, 0.5);
     opacity: 0.5;
     font-size: 12px;
     line-height: 14px;

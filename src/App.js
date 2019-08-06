@@ -28,10 +28,6 @@ function App() {
 
                         <MainImage/>
 
-                        <div className="text-2">
-                            Число подписчиков ограничено. Для нас важно не количество, а качество.
-                        </div>
-
                         <div className="subscribe">
                             <button class='button button--block button--orange'>ПОДПИСАТЬСЯ</button>
                         </div>

@@ -1,12 +1,9 @@
 /** Внешние библиотеки*/
 @import "~normalize.css/normalize.css";
-
 /** ebnvioment */
 @import "vars";
 @import "common";
-
 /** component styles */
-
 @import "topButton";
 @import "title";
 @import "mainImage";
@@ -19,15 +16,39 @@
   font-size: 15px;
   line-height: 18px;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1500px) {
+    font-size: 20px;
+    line-height: 36px;
+    padding-right: 60px;
+    margin-bottom: 0;
+  }
 }
 
-.text-2 {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
-  color: $orange;
-  margin-bottom: 20px;
+.subscribe {
+  @media screen and (min-width: 1500px) {
+    display: none;
+  }
 }
+
 aside {
   margin-bottom: 30px;
+}
+
+.main-wrapper {
+  margin-top: 20px;
+
+  @media screen and (min-width: 1500px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    main {
+      width: 870px;
+    }
+    aside {
+      width: 466px;
+    }
+  }
+
 }

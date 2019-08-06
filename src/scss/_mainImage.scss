@@ -1,7 +1,35 @@
-.main-image {
-  height: 200px;
-  background-color: #ddd;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.2);
+
+.main-image-block {
+
+  @media screen and (min-width: 1500px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 53px;
+  }
+
+  &__image {
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 1500px) {
+      width: 785px;
+      height: 430px;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: $orange;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1500px) {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
 }
