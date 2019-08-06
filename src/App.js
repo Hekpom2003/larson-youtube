@@ -29,7 +29,7 @@ function App() {
                         <MainImage/>
 
                         <div className="subscribe">
-                            <button class='button button--block button--orange'>ПОДПИСАТЬСЯ</button>
+                            <button className='button button--block button--orange'>ПОДПИСАТЬСЯ</button>
                         </div>
 
                         <Preimushestva/>
