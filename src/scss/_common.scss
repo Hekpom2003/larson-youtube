@@ -31,8 +31,17 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+
+  @media screen and (min-width: 1500px){
+    font-size: 20px;
+    line-height: 30px;
+    padding: 17px 20px 16px;
+  }
 
   &:disabled {
+    cursor: default;
     opacity: 0.5;
   }
 
@@ -46,6 +55,10 @@ body {
     color: white;
     background-color: $orange;
     box-shadow: 0px 3px 0px #F0511B;
+
+    &:not(:disabled):hover {
+      background-color: #FF5A22;
+    }
   }
 
   &.button--orange-inverted {
@@ -54,5 +67,10 @@ body {
     background-color: white;
     box-shadow: 0px 3px 0px white;
     font-weight: normal;
+
+    &:not(:disabled):hover {
+      background-color: $orange;
+      color: white;
+    }
   }
 }

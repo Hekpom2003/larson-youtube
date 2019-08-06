@@ -3,27 +3,43 @@ footer {
   padding: 13px 0 17px;
 
   .row-1 {
+
+    font-size: 13px;
+    line-height: 15px;
     text-align: center;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
-    font-size: 14px;
-    line-height: 36px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1500px) {
+      font-size: 14px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
   }
 
   .row-2 {
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @media screen and (min-width: 1500px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     li {
       list-style-type: none;
 
+
       &:not(:last-child) {
-        a {
-          border-right: 1px solid white;
+        margin-bottom: 5px;
+
+        @media screen and (min-width: 1500px) {
+          margin-bottom: 0;
+
+          a {
+            border-right: 1px solid white;
+          }
         }
       }
     }
@@ -31,10 +47,16 @@ footer {
     a {
       display: inline;
       color: white;
-      font-size: 14px;
-      line-height: 36px;
-      padding: 0 10px;
+      font-size: 13px;
+      line-height: 15px;
       text-decoration: none;
+
+      @media screen and (min-width: 1500px) {
+        font-size: 14px;
+        line-height: 36px;
+        padding: 0 10px;
+      }
+
     }
   }
 }
